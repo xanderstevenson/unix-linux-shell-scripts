@@ -64,7 +64,7 @@ Demonstrates:
 
 2. Running with valid arguments
 
-3.Attempting to switch to the deleted user to confirm removal
+3. Attempting to switch to the deleted user to confirm removal
 
 
 ### C. Shell Environment Customization
