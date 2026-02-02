@@ -1,9 +1,9 @@
 # Unix and Linux Shell Scripts
-Complex and robust shell scripts that complete common tasks performed by Unix and Linux system administrators.
+Shell scripts that complete common tasks performed by Unix and Linux system administrators.
 
 ## Project Overview
 
-This project is a comprehensive Linux Shell Scripting Toolkit designed to demonstrate system administration, automation, and environment customization using Bash. The project focuses on user and group management, package installation, system maintenance, networking diagnostics, disk cleanup, and file archiving, following best practices for scripting, validation, and verification.
+This project is a Linux Shell Scripting Toolkit designed to demonstrate system administration, automation, and environment customization using Bash. The project focuses on user and group management, package installation, system maintenance, networking diagnostics, disk cleanup, and file archiving, following best practices for scripting, validation, and verification.
 
 All scripts are written to be reusable, executable from any directory, and compliant with Linux system administration standards. The project also includes demonstrations and verification steps to validate correct execution as required by the rubric.
 
@@ -27,10 +27,10 @@ The goals of this project are to:
 
 ## Key Features Implemented
 - Cross-platform compatibility (apt, yum, dnf, pacman, zypper)
-- Robust error handling with meaningful messages
+- Error handling with meaningful messages
 - Security best practices (minimal sudo, input validation)
 - Modular functions for reusability
-- Comprehensive logging and verification
+- Logging and verification
 - Professional documentation with APA references
 
 

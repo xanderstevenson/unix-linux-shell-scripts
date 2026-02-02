@@ -1,0 +1,61 @@
+# Custom Aliases File
+# Author: Alexander Stevenson
+# Purpose: Command shortcuts for enhanced productivity
+
+# List commands with enhanced options
+alias ll='ls -lrt'
+alias la='ls -a'
+alias lla='ls -lrt -a'
+alias c='clear'
+
+# Navigation shortcuts
+alias desktop='cd ~/Desktop'
+alias downloads='cd ~/Downloads'
+alias documents='cd ~/Documents'
+alias home='cd ~'
+alias root='cd /'
+alias bin='cd ~/bin'
+
+# Enhanced navigation with listing
+alias ll_desktop='cd ~/Desktop && ll'
+alias ll_downloads='cd ~/Downloads && ll'
+alias ll_documents='cd ~/Documents && ll'
+
+# System administration shortcuts
+alias update='sudo apt update && sudo apt upgrade -y'
+alias install='sudo apt install -y'
+alias remove='sudo apt remove -y'
+alias search='apt search'
+
+# Process management
+alias psa='ps aux'
+alias psg='ps aux | grep'
+
+# Network shortcuts
+alias pingg='ping -c 4 google.com'
+alias ping8='ping -c 4 8.8.8.8'
+alias ns='nslookup'
+
+# File operations
+alias cpv='cp -v'
+alias mvv='mv -v'
+alias rmv='rm -v'
+
+# Git shortcuts (if git is installed)
+alias gs='git status'
+alias ga='git add'
+alias gc='git commit'
+alias gp='git push'
+alias gl='git pull'
+
+# Directory creation with immediate navigation
+alias mkcd='mkdir -p && cd'
+
+# Enhanced directory listing
+alias tree='ls -R'
+alias duh='du -h --max-depth=1'
+
+# System information
+alias dfh='df -h'
+alias freeh='free -h'
+alias uptime='uptime -p'
