@@ -23,6 +23,16 @@ The goals of this project are to:
 - Archive and compress system files using multiple algorithms
 
 - Demonstrate scripting concepts such as functions, loops, conditionals, variables, and error handling
+  
+
+## Key Features Implemented
+- Cross-platform compatibility (apt, yum, dnf, pacman, zypper)
+- Robust error handling with meaningful messages
+- Security best practices (minimal sudo, input validation)
+- Modular functions for reusability
+- Comprehensive logging and verification
+- Professional documentation with APA references
+
 
 ## Features and Components
 ### A. User Creation Script (create_user.sh)
