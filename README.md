@@ -1,4 +1,4 @@
-# unix-linux-shell-scripts
+# Unix and Linux Shell Scripts
 Complex and robust shell scripts that complete common tasks performed by Unix and Linux system administrators.
 
 ## Project Overview
