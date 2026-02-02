@@ -44,7 +44,7 @@ Demonstrates:
 
 2. Running with valid arguments
 
-3.Switching to the new user and forcing a password change
+3. Switching to the new user and forcing a password change
 
 
 ### B. User Deletion Script (delete_user.sh)
@@ -55,7 +55,7 @@ Demonstrates:
 
 - Deletes the user and their home directory
 
--Displays /etc/passwd to verify user deletion
+- Displays /etc/passwd to verify user deletion
 
 
 Demonstrates:
@@ -142,7 +142,7 @@ Demonstrates:
 
 - Linux system utilities (useradd, userdel, groupadd, df, tar, ping, nslookup)
 
--Package managers (apt, yum, or equivalent)
+- Package managers (apt, yum, or equivalent)
 
 
 ### Conclusion
