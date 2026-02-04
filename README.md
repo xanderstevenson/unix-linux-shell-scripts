@@ -35,24 +35,48 @@ The goals of this project are to:
 - Logging and verification
 - Professional documentation with APA references
 
-To run the scripts:
+### Script Testing and Demonstration
+
+This project includes two approaches for script testing:
+
+#### 1. Individual Script Testing (Required by Instructions)
+
+Each script must be tested individually according to the course requirements:
 
 ```bash
-# Navigate to scripts directory
+# Navigate to scripts directory for most scripts
 cd scripts/
 
-# Run setup environment
-./setup_environment.sh
+# Test user creation (3 required conditions)
+./create_user.sh                    # 1. Without arguments (shows error)
+./create_user.sh testuser          # 2. With valid arguments
+su - testuser                      # 3. Switch to new user and change password
 
-# Run demo
-./demo_scripts.sh
+# Test user deletion (3 required conditions)  
+./delete_user.sh                    # 1. Without arguments (shows error)
+./delete_user.sh testuser          # 2. With valid arguments and confirmation
+su - testuser                      # 3. Attempt to switch (confirms deletion)
 
-# After setup, scripts are accessible from any directory:
-create_user.sh testuser
-delete_user.sh testuser
+# Other scripts (run from scripts/ directory)
+./install_vim.sh                   # Vim installation check
+./update_system.sh                 # System update with logging
+./check_google_ping.sh             # Internet connectivity test
+./check_dns_ping.sh               # DNS server connectivity test  
+./check_dns_resolution.sh         # DNS resolution test
+./disk_cleanup.sh                  # Disk space cleanup
+./archive_compress.sh              # Archiving and compression
 ```
 
-## Directory Structure
+#### 2. Comprehensive Demo Script (Supplementary)
+
+The demo_scripts.sh provides a comprehensive overview of all scripts in a single execution:
+
+```bash
+cd scripts/
+./demo_scripts.sh  # Shows all scripts with safe demonstrations
+```
+
+### Directory Structure
 
 ```
 unix-linux-shell-scripts/
