@@ -35,6 +35,50 @@ The goals of this project are to:
 - Logging and verification
 - Professional documentation with APA references
 
+To run the scripts:
+
+```bash
+# Navigate to scripts directory
+cd scripts/
+
+# Run setup environment
+./setup_environment.sh
+
+# Run demo
+./demo_scripts.sh
+
+# After setup, scripts are accessible from any directory:
+create_user.sh testuser
+delete_user.sh testuser
+```
+
+## Directory Structure
+
+```
+unix-linux-shell-scripts/
+├── scripts/                    # All shell scripts
+│   ├── create_user.sh
+│   ├── delete_user.sh
+│   ├── setup_environment.sh
+│   ├── install_vim.sh
+│   ├── update_system.sh
+│   ├── check_google_ping.sh
+│   ├── check_dns_ping.sh
+│   ├── check_dns_resolution.sh
+│   ├── disk_cleanup.sh
+│   ├── archive_compress.sh
+│   └── demo_scripts.sh
+├── flowcharts/                 # Network diagnostic flowcharts
+│   ├── check_google_ping.png
+│   ├── check_dns_ping.png
+│   └── check_dns_resolution.png
+├── logs/                       # System update and operation logs
+├── archives/                   # Compressed archive files
+├── custom_aliases              # Shell aliases and shortcuts
+├── README.md                  # Project documentation
+├── LICENSE                    # MIT License
+└── requirements.txt            # Python dependencies
+```
 
 ## Features and Components
 ### A. User Creation Script (create_user.sh)
@@ -93,7 +137,7 @@ Demonstrates:
 
   - Create a ~/bin directory
 
-  - Move create_user.sh and delete_user.sh into bin
+  - Move create_user.sh and delete_user.sh from scripts/ into bin
 
   - Update the PATH variable to allow execution from any directory
 

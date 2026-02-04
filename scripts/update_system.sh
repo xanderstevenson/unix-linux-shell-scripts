@@ -16,13 +16,15 @@ detect_package_manager() {
         echo "pacman"
     elif command -v zypper &>/dev/null; then
         echo "zypper"
+    elif command -v brew &>/dev/null; then
+        echo "brew"
     else
         echo "unknown"
     fi
 }
 
 # Create log file with timestamp
-LOG_FILE="update_$(date +%Y%m%d_%H%M%S).log"
+LOG_FILE="../logs/update_$(date +%Y%m%d_%H%M%S).log"
 
 echo "Starting system update..."
 echo "Log file: $LOG_FILE"
@@ -104,10 +106,23 @@ case $PKG_MANAGER in
             sudo zypper clean
         } >> "$LOG_FILE" 2>&1
         ;;
+    "brew")
+        echo "Updating packages with Homebrew..."
+        {
+            echo "Running: brew update"
+            brew update
+            echo ""
+            echo "Running: brew upgrade"
+            brew upgrade
+            echo ""
+            echo "Running: brew cleanup"
+            brew cleanup
+        } >> "$LOG_FILE" 2>&1
+        ;;
     *)
         {
             echo "Error: No supported package manager found."
-            echo "Supported package managers: apt, yum, dnf, pacman, zypper"
+            echo "Supported package managers: apt, yum, dnf, pacman, zypper, brew"
         } >> "$LOG_FILE"
         echo "Error: No supported package manager found."
         exit 1

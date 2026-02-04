@@ -31,8 +31,8 @@ else
     echo "⚠ delete_user.sh not found"
 fi
 
-if [ -f "$SCRIPT_DIR/custom_aliases" ]; then
-    cp "$SCRIPT_DIR/custom_aliases" "$HOME/bin/"
+if [ -f "$SCRIPT_DIR/../custom_aliases" ]; then
+    cp "$SCRIPT_DIR/../custom_aliases" "$HOME/bin/"
     echo "✓ custom_aliases moved to ~/bin"
 else
     echo "⚠ custom_aliases not found"
